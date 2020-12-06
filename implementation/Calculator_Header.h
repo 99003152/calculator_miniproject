@@ -15,14 +15,11 @@ int vol_cuboid(int x, int y, int z);
 int vol_sphere(int x, int y, int z);
 int vol_cone(int x, int y, int z);
 int vol_cylinder(int x, int y, int z);
-int Scalene();
-int Isosceles();
-int Equilateral();
-int B_H_Triangle();
-int Circle();
-int Rectangle();
-int Square();
-int Trapezium();
+int Triangle(int x,int y);
+int Circle(int x);
+int Rectangle(int x,int y);
+int Square(int x);
+
 
 
 
