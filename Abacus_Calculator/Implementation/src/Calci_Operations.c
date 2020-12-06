@@ -19,7 +19,7 @@ int div(int x, int y)
         if(0 == y)
             return 0;
         else 
-           return x/y;
+           return (int)x/y;
     }
 int squr(int x)
     { 
