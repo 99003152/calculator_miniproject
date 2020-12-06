@@ -147,4 +147,3 @@ int valid_operation(int operation)
     return ((ADD <= operation) && (EXIT >= operation)) ? VALID: INVALID;
 }
 
-}
