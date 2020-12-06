@@ -1,8 +1,6 @@
 #include<calci.h>
 int a,b,c;
 unsigned int option = 0;
-
-enum operations{ ADD =1, SUB, MUL, SQUR, CUBE, SPHERE, CUBOID, CYLINDER, CONE, TRIANGLE, CIRCLE, RECTANGLE, SQUARE, TRAPEZIUM,EXIT};
 void calci_menu(void);
 int valid_operation(int operation);
 
@@ -18,7 +16,7 @@ int main(int argc, char *argv[])
 void calci_menu(void)
 {
     printf("\nAvailable operations\n");
-    printf("\n1. Add\n2. Sub\n3. Mult\n4. Div\n5. Exit");
+    printf("\n1. Add\n2. Sub\n3. Mult\n4. Div\n5.Square\n6.Volume of Cube\n7.Volume of Sphere\n8.Volume of Cuboid\n9.Volume of Cylinder\n10.Volume of Cone\n11.Area of Triangle\n12.Area of Circle\n13.Area of Rectangle\n14.Area of Square\n15.Exit\n");
     printf("\n\tEnter your choice\n");
     scanf("%d", &option);
     if(EXIT == option)
@@ -41,71 +39,71 @@ void calci_menu(void)
     }
     switch(option)
     {
-        case ADD:
+        case 1:
            printf("\n\t%d + %d = %d\nEnter to continue",a,b,add(a,b));            
             getchar();
             break;
-        case SUB:
+        case 2:
             printf("\n\t%d - %d = %d\nEnter to continue", 
             a,b,sub(a,b));            
             getchar();
             break;
-        case MUL:
+        case 3:
             printf("\n\t%d * %d = %d\nEnter to continue", 
             a,b,mul(a,b));            
             getchar();
             break;
-        case SQUR:
+        case 4:
             printf("\n\tThe square of %d = %d\nEnter to continue", 
             a, squr(a));            
             getchar();
             break;
-        case CUBE:
+        case 6:
             printf("\n\tThe volume of cube with side %d  = %d\nEnter to continue", 
             a,vol_cube(a));
             getchar();
             break;
-        case SPHERE:
+        case 7:
             printf("\n\tThe volume of sphere of radius %d = %d\nEnter to continue", 
             a,vol_sphere(a));
             getchar();
             break;
-        case CUBOID:
+        case 8:
             printf("\n\tThe volume of cuboid with dimensions %d, %d, %d = %d\nEnter to continue", 
             a,b,c,vol_cuboid(a,b,c)); 
             getchar();
             break;
-        case CYLINDER:
+        case 9:
             printf("\n\tThe volume of cylinder with dimensions %d, %d = %d\nEnter to continue", 
             a,b,vol_cylinder(a,b));
             getchar();
             break;
-        case CONE:
+        case 10:
             printf("\n\tThe volume of cone with dimensions %d, %d = %d\nEnter to continue", 
             a,b,vol_cone(a,b));
             getchar();
             break;
-        case TRIANGLE:
+        case 11:
             printf("\n\tThe area of triangle with parameters %d & %d = %d\nEnter to continue", 
             a,b, Triangle(a,b));
             getchar();
             break;
-        case CIRCLE:
+        case 12:
             printf("\n\tThe area of circle with radius %d  = %d\nEnter to continue", 
             a,Circle(a)); 
             getchar();
             break;
-        case RECTANGLE:
+        case 13:
             printf("\n\tThe area of rectangle with parameters %d & %d = %d\nEnter to continue", 
             a,b,Rectangle(a,b)); 
             getchar();
             break;
-        case SQUARE:
+        case 14:
             printf("\nThe area of square with side  %d = %d\nEnter to continue", 
             a,Square(a));            
             getchar();
             break;
-        case EXIT:
+        case 15:
             exit(0);
             break;
         default:
