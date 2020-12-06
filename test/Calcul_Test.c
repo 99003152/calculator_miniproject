@@ -10,6 +10,7 @@ void test_add(void);
 void test_sub(void);
 void test_mul(void);
 void test_div(void);
+void test_squr(void);
 void test_vol_cube(void);
 void test_vol_cuboid(void);
 void test_vol_sphere(void);
@@ -39,6 +40,7 @@ int main() {
   CU_add_test(suite, "sub", test_sub);
   CU_add_test(suite, "mul", test_mul);
   CU_add_test(suite, "div", test_div);
+  CU_add_test(suite, "squr", test_squr);
   CU_add_test(suite, "vol_cube", test_vol_cube);
   CU_add_test(suite, "vol_cuboid", test_vol_cuboid);
   CU_add_test(suite, "vol_sphere", test_vol_sphere);
@@ -78,6 +80,9 @@ void test_mul(void){
 }
 void test_div(void){
     CU_ASSERT( 2 == div(20, 10));
+}
+void test_squr(void){
+    CU_ASSERT( 400 == squr(20));
 }
 void test_vol_cube(void){
     CU_ASSERT(1000 == vol_cube(10));
