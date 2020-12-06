@@ -37,7 +37,7 @@ void calci_menu(void)
     {
         printf("\n\tEnter your Numbers with space between them\n");
         __fpurge(stdin);
-        scanf("%d %d", &x, &y);
+        scanf("%d %d", &a, &b);
     }
     else
     {
@@ -57,20 +57,19 @@ void calci_menu(void)
             break;
         case SUB:
             printf("\n\t%d - %d = %d\nEnter to continue", 
-            a,b,subtract(a,b));            
+            a,b,sub(a,b));            
             __fpurge(stdin);
             getchar();
             break;
         case MUL:
             printf("\n\t%d * %d = %d\nEnter to continue", 
-            a,b,
-            multiply(a,b));            
+            a,b,mul(a,b));            
             __fpurge(stdin);
             getchar();
             break;
         case DIV:
             printf("\n\t%d / %d = %d\nEnter to continue", 
-            a,b,divide(a,b));            
+            a,b,diva,b));            
             __fpurge(stdin);
             getchar();
             break;
