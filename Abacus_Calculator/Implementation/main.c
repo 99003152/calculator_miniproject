@@ -5,7 +5,7 @@
 int a,b,c;
 unsigned int calci_operation = 0;
 
-enum operations{ ADD =1, SUB, MUL, DIV, SQUR, CUBE, SPHERE, CUBOID, CYLINDER, CONE, TRIANGLE, CIRCLE, RECTANGLE, SQUARE, TRAPEZIUM,EXIT};
+enum operations{ ADD =1, SUB, MUL, SQUR, CUBE, SPHERE, CUBOID, CYLINDER, CONE, TRIANGLE, CIRCLE, RECTANGLE, SQUARE, TRAPEZIUM,EXIT};
 void calci_menu(void);
 int valid_operation(int operation);
 
@@ -64,12 +64,6 @@ void calci_menu(void)
         case MUL:
             printf("\n\t%d * %d = %d\nEnter to continue", 
             a,b,mul(a,b));            
-            __fpurge(stdin);
-            getchar();
-            break;
-        case DIV:
-            printf("\n\t%d / %d = %d\nEnter to continue", 
-            a,b,div(a,b));            
             __fpurge(stdin);
             getchar();
             break;
