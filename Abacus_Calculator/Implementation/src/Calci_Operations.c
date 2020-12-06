@@ -15,11 +15,8 @@ int mul(int x, int y)
         return x*y;
     }
 int div(int x, int y)
-    {
-        if(0 == y)
-            return 0;
-        else 
-           return (int)x/y;
+{
+           return (int)(x/y);
 }
 int squr(int x){
 return x*x;
@@ -41,7 +38,7 @@ int vol_cuboid(int x, int y, int z)
 
 int vol_cylinder(int x, int y)
 {
-    return (int)pi*x*x*y;
+    return (int)(pi*x*x*y);
 }
 
 int vol_cone(int x, int y)
@@ -54,7 +51,7 @@ int Triangle(int x, int y)
 }
 int Circle(int x)
 {
-   return (int)pi*x*x;
+   return (int)(pi*x*x);
 }
 int Rectangle(int x,int y)
 {
