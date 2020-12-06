@@ -16,14 +16,11 @@ void test_vol_cuboid(void);
 void test_vol_sphere(void);
 void test_vol_cone(void);
 void test_vol_cylinder(void);
-void test_Scalene(void);
-void test_Isosceles(void);
-void test_Equilateral(void);
-void test_B_H_Triangle(void);
+void test_Triangle(void);
 void test_Circle(void);
 void test_Rectangle(void);
 void test_Square(void);
-void test_Trapezium(void);
+
 
 /* Start of the application test */
 int main() {
@@ -46,14 +43,11 @@ int main() {
   CU_add_test(suite, "vol_sphere", test_vol_sphere);
   CU_add_test(suite, "vol_cone", test_vol_cone);
   CU_add_test(suite, "vol_cylinder", test_vol_cylinder);
-  CU_add_test(suite, "Scalene", test_Scalene);
-  CU_add_test(suite, "Isosceles", test_Isosceles);
-  CU_add_test(suite, "Equilateral", test_Equilateral);
-  CU_add_test(suite, "vB_H_Triangle", test_B_H_Triangle);
+  CU_add_test(suite, "Triangle", test_Triangle);
   CU_add_test(suite, "Circle", test_Circle);
   CU_add_test(suite, "Rectangle", test_Rectangle);
   CU_add_test(suite, "Square", test_Square);
-  CU_add_test(suite, "Trapezium", test_Trapezium);
+ 
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -99,7 +93,7 @@ void test_vol_cone(void){
 void test_vol_cylinder(void){
     CU_ASSERT( 6280 == vol_cylinder(10,20));
 }
-void test_B_H_Triangle(void){
+void test_Triangle(void){
     CU_ASSERT( 100 == B_H_Triangle(10,20));
 }
 void test_Circle(void){
@@ -110,7 +104,4 @@ void test_Rectangle(void){
 }
 void test_Square(void){
     CU_ASSERT( 100 == Square(10));
-}
-void test_Trapezium(void){
-    CU_ASSERT( 130 == Trapezium(12,14,10));
 }
