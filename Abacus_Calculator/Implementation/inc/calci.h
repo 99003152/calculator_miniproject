@@ -18,4 +18,4 @@ int Triangle(int x,int y);
 int Circle(int x);
 int Rectangle(int x,int y);
 int Square(int x);
-#endif
+
