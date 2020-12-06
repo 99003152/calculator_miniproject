@@ -3,6 +3,8 @@ int a,b,c;
 unsigned int option = 0;
 void calci_menu(void);
 int valid_operation(int operation);
+#define VALID (1)
+#define INVALID (0)
 
 int main(int argc, char *argv[])
 {
