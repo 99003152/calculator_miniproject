@@ -89,7 +89,7 @@ void test_vol_cylinder(void){
     CU_ASSERT( 6280 == vol_cylinder(10,20));
 }
 void test_Triangle(void){
-    CU_ASSERT( 100 == B_H_Triangle(10,20));
+    CU_ASSERT( 100 == Triangle(10,20));
 }
 void test_Circle(void){
     CU_ASSERT( 314 == Circle(10));
