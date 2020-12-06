@@ -1,21 +1,20 @@
 #include <calci.h>
-#include <math.h>
+#include<stdio.h>
 
 #define pi 3.14
 
-int add(int x, int y)
+int add (int x,int y)
 {
-    return x+y;
- }
-int sub(int x, int y)
-{
-     return x-y;
+return x+y;
 }
-int mul(int x, int y)
-    {
-        return x*y;
-    }
-
+int sub(int x,int y)
+{
+return x-y;
+}
+int mul (int x,int y)
+{
+return x*y;
+}
 int squr(int x){
 return x*x;
 }
