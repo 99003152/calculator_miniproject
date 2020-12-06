@@ -2,12 +2,14 @@
 
 #define VALID (1)
 #define INVALID (0)
+int a,b,c;
+unsigned int calci_operation = 0;
 
-enum operations{ ADD =1, SUB, MUL, DIV, CUBE, SPHERE, CUBOID, CYLINDER, CONE};
+enum operations{ ADD =1, SUB, MUL, DIV, SQUR, CUBE, SPHERE, CUBOID, CYLINDER, CONE, TRIANGLE, CIRCLE, RECTANGLE, SQUARE, TRAPEZIUM};
 void calci_menu(void);
-double valid_operation(double operation);
+int valid_operation(int operation);
 
-double main(double argc, char *argv[])
+int main(int argc, char *argv[])
 {
     printf("\n**calci**\n");
     while(1)
@@ -48,42 +50,91 @@ void calci_menu(void)
     switch(calci_operation)
     {
         case ADD:
-            printf("\n\t%d + %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            add(calculator_operand1, calculator_operand2));
-            
+           printf("\n\t%d + %d = %d\nEnter to continue", 
+            a,b,add(a,b));            
             __fpurge(stdin);
             getchar();
             break;
-        case SUBTRACT:
+        case SUB:
             printf("\n\t%d - %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            subtract(calculator_operand1, calculator_operand2));
-            
+            a,b,subtract(a,b));            
             __fpurge(stdin);
             getchar();
             break;
-        case MULTIPLY:
+        case MUL:
             printf("\n\t%d * %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            multiply(calculator_operand1, calculator_operand2));
-            
+            a,b,
+            multiply(a,b));            
             __fpurge(stdin);
             getchar();
             break;
-        case DIVIDE:
+        case DIV:
             printf("\n\t%d / %d = %d\nEnter to continue", 
-            calculator_operand1, 
-            calculator_operand2,
-            divide(calculator_operand1, calculator_operand2));
-            
+            a,b,divide(a,b));            
             __fpurge(stdin);
             getchar();
             break;
-        case 5:
+        case SQUR:
+            printf("\n\tThe square of %d = %d\nEnter to continue", 
+            a, squr(a));            
+            __fpurge(stdin);
+            getchar();
+            break;
+        case CUBE:
+            printf("\n\tThe volume of cube with side %d  = %d\nEnter to continue", 
+            a,vol_cube(a));            
+            __fpurge(stdin);
+            getchar();
+            break;
+        case SPHERE:
+            printf("\n\tThe volume of sphere of radius %d = %d\nEnter to continue", 
+            a,vol_sphere(a));           
+            __fpurge(stdin);
+            getchar();
+            break;
+        case CUBOID:
+            printf("\n\tThe volume of cuboid with dimensions %d, %d, %d = %d\nEnter to continue", 
+            a,b,c,vol_cuboid(a,b,c));            
+            __fpurge(stdin);
+            getchar();
+            break;
+        case CYLINDER:
+            printf("\n\tThe volume of cylinder with dimensions %d, %d = %d\nEnter to continue", 
+            a,b,vol_cylinder(a,b));            
+            __fpurge(stdin);
+            getchar();
+            break;
+        case CONE:
+            printf("\n\tThe volume of cone with dimensions %d, %d = %d\nEnter to continue", 
+            a,b,vol_cone(a,b));            
+            __fpurge(stdin);
+            getchar();
+            break;
+        case TRIANGLE:
+            printf("\n\tThe area of triangle with parameters %d & %d = %d\nEnter to continue", 
+            a,b, Triangle(a,b));            
+            __fpurge(stdin);
+            getchar();
+            break;
+        case CIRCLE:
+            printf("\n\tThe area of circle with radius %d  = %d\nEnter to continue", 
+            a,Circle(a));            
+            __fpurge(stdin);
+            getchar();
+            break;
+        case RECTANGLE:
+            printf("\n\tThe area of rectangle with parameters %d & %d = %d\nEnter to continue", 
+            a,b,Rectangle(a,b));            
+            __fpurge(stdin);
+            getchar();
+            break;
+        case SQUARE:
+            printf("\nThe area of square with side  %d = %d\nEnter to continue", 
+            a,Square(a));            
+            __fpurge(stdin);
+            getchar();
+            break;
+        case EXIT:
             exit(0);
             break;
         default:
