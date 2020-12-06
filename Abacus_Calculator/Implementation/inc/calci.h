@@ -8,7 +8,6 @@
 int add(int x, int y);
 int sub(int x, int y);
 int mul(int x, int y);
-int div(int x, int y);
 int squr(int x);
 int vol_cube(int x);
 int vol_cuboid(int x, int y, int z);
