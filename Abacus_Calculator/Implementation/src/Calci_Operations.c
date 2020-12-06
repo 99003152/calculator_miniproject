@@ -3,13 +3,13 @@
 #define pi 3.14
 
 int add(int x, int y)
- {
-        return x+y;
-    }
+{
+    return x+y;
+ }
 int sub(int x, int y)
-    {
-        return x-y;
-    }
+{
+     return x-y;
+}
 int mul(int x, int y)
     {
         return x*y;
@@ -20,11 +20,10 @@ int div(int x, int y)
             return 0;
         else 
            return (int)x/y;
-    }
-int squr(int x)
-    { 
-        return x*x;
-    }
+}
+int squr(int x){
+return x*x;
+}
 int vol_cube(int x)
 {
     return x*x*x;
