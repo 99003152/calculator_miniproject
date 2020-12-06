@@ -21,7 +21,7 @@ void calci_menu(void)
     printf("\n1. Add\n2. Sub\n3. Mult\n4. Div\n5.Square\n6.Volume of Cube\n7.Volume of Sphere\n8.Volume of Cuboid\n9.Volume of Cylinder\n10.Volume of Cone\n11.Area of Triangle\n12.Area of Circle\n13.Area of Rectangle\n14.Area of Square\n15.Exit\n");
     printf("\n\tEnter your choice\n");
     scanf("%d", &option);
-    if(EXIT == option)
+    if(15 == option)
     {
         printf("\nThank you. Exiting the Application\n");
         exit(0);
