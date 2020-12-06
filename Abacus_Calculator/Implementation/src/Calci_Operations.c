@@ -32,7 +32,7 @@ int vol_cube(int x)
 
 int vol_sphere(int x)
 {
-    return 1.33*pi*x*x*x;
+    return (int)(1.33*pi*x*x*x);
 }
 
 int vol_cuboid(int x, int y, int z)
@@ -42,20 +42,20 @@ int vol_cuboid(int x, int y, int z)
 
 int vol_cylinder(int x, int y)
 {
-    return pi*x*x*y;
+    return (int)pi*x*x*y;
 }
 
 int vol_cone(int x, int y)
 {
-    return 0.33 pi*x*x*y;
+    return (int)(0.33*pi*x*x*y);
 }
 int Triangle(int x, int y)
 {
-    return (x*y*.5);
+    return (int)(x*y*.5);
 }
 int Circle(int x)
 {
-   return pi*x*x;
+   return (int)pi*x*x;
 }
 int Rectangle(int x,int y)
 {
