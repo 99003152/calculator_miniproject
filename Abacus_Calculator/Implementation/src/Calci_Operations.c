@@ -16,7 +16,8 @@ int mul(int x, int y)
     }
 int div(int x, int y)
 {
-           return (int)(x/y);
+    int quo=x/y;
+     return quo;
 }
 int squr(int x){
 return x*x;
