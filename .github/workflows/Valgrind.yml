@@ -18,6 +18,4 @@ jobs:
         sudo apt-get -y install valgrind
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
     - name: make test
-      run: |
-        make test -C Abacus_Calculator/Implementation/
-        valgrind ./Abacus_Calculator/Implementation/build/Test_Abacus.out
+      run: | make test 
